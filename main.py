@@ -4,8 +4,6 @@ from db.docker_db import insert_container, check_port, remove_container
 import random
 
 print("Welcome to the Docker container manager.")
-print("What would you like to do?")
-print("1. Start a new container")
 
 print("Choose an OS image to pull:")
 for i, image in enumerate(images_list):
