@@ -3,7 +3,7 @@ import sqlite3
 connection = sqlite3.connect('data.db')
 
 cursor = connection.cursor()
-cursor.execute('CREATE TABLE IF NOT EXISTS Containers (id INTEGER PRIMARY KEY AUTOINCREMENT, name TEXT, port INTERGER)')
+cursor.execute('CREATE TABLE IF NOT EXISTS Containers (id INTEGER PRIMARY KEY AUTOINCREMENT, name TEXT, port INTEGER)')
 cursor.close()
 
 def insert_container(name, port):
